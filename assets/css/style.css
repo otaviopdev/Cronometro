@@ -1,0 +1,283 @@
+:root {
+  --background-1: linear-gradient(
+    45deg,
+    #151515,
+    #13294b,
+    #007fae,
+    #4b9cd3,
+    #c2baba,
+    #767676
+  );
+  background: -o-linear-gradient(330deg, #0071bf, #000000);
+  background: linear-gradient(120deg, #0071bf, #000000);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: var(--background-1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: "Roboto Mono", monospace;
+  overflow: hidden;
+}
+
+.text {
+  position: absolute;
+  top: 60px;
+  height: 100px;
+  background: transparent;
+}
+
+h1 {
+  width: 100%;
+  color: transparent;
+  text-transform: uppercase;
+  font-size: 6rem;
+  background-image: url(../images/raios.jpg);
+  background-position-y: center;
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  overflow: hidden;
+}
+
+.cronometro_body {
+  position: relative;
+  height: 200px;
+  width: 500px;
+  border-radius: 20px;
+  border: 3px solid rgba(255, 255, 255, 0.15);
+  background: -o-linear-gradient(305deg, #cfdada, #7e9dc7, #afb7c7, #63cc86);
+  background: linear-gradient(145deg, #cfdada, #7e9dc7, #afb7c7, #63cc86);
+  -webkit-box-shadow: inset 17.42px 17.42px 17px #888d99,
+    inset -17.42px -17.42px 17px #ffffff;
+  box-shadow: inset 17.42px 17.42px 17px #888d99,
+    inset -17.42px -17.42px 17px #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.cronometro_body .cronometro_time {
+  width: 100%;
+  text-align: center;
+}
+
+.cronometro_body .cronometro_time span {
+  color: #131212;
+  font-size: 5rem;
+  font-weight: 400;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.cronometro_body .cronometro_time span:nth-child(5) {
+  font-size: 4rem;
+}
+
+.controls {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.controls button {
+  height: 60px;
+  width: 60px;
+  background: none;
+  border: none;
+  border-radius: 50%;
+  outline: inherit;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.controls button i {
+  text-align: center;
+  font-size: 2.5rem;
+  text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4);
+}
+
+.controls button:hover {
+  color: #2baf2b;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.controls button:nth-child(2):hover {
+  color: #136686;
+}
+
+.controls button:nth-child(1):hover {
+  color: #7a3c32;
+}
+/* ---------------------------------------------------------------------------------------- */
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.25);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+footer span {
+  color: #000;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+footer .social_icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+footer .social_icons a {
+  text-decoration: none;
+  margin-left: 20px;
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+footer .social_icons a img {
+  height: 30px;
+  width: 30px;
+}
+
+footer .social_icons a:hover {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* ---------------------------------------------------------------------------------------- */
+
+@media screen and (min-width: 300px) and (max-width: 399px) {
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .cronometro_body {
+    height: 200px;
+    width: 300px;
+  }
+
+  .cronometro_body .cronometro_time span {
+    font-size: 3.2rem;
+  }
+
+  .cronometro_body .cronometro_time span:nth-child(5) {
+    font-size: 2.7rem;
+  }
+
+  .controls button i {
+    text-align: center;
+    font-size: 2rem;
+  }
+  footer span {
+    font-size: 0.9rem;
+  }
+
+  footer .social_icons a img {
+    height: 30px;
+    width: 30px;
+  }
+
+  footer .social_icons a {
+    margin-left: 15px;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 576px) {
+  h1 {
+    font-size: 3.7rem;
+    text-align: center;
+  }
+  .cronometro_body {
+    height: 220px;
+    width: 390px;
+  }
+
+  .cronometro_body .cronometro_time span {
+    font-size: 3.9rem;
+  }
+
+  .cronometro_body .cronometro_time span:nth-child(5) {
+    font-size: 3.2rem;
+  }
+
+  .controls button i {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  footer .social_icons a {
+    margin-left: 10px;
+  }
+
+  footer .social_icons a img {
+    height: 33px;
+    width: 33px;
+  }
+
+  footer span {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  h1 {
+    font-size: 4.3rem;
+  }
+}

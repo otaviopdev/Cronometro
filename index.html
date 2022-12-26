@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+
+  <!-- CSS style-->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+
+  <!-- Google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Image -->
+  <meta property="og:image"
+    content="https://c1.wallpaperflare.com/preview/923/19/684/temporal-distance-chronometer-duration-egg-timer.jpg" />
+
+  <title>Cronômetro Web Online</title>
+
+</head>
+
+<body>
+  <div class="text">
+    <h1>Cronômetro web</h1>
+  </div>
+
+  <div class="cronometro_body">
+    <div class="cronometro_time">
+      <span id="spanMinutes">00</span> <span>:</span>
+      <span id="spanSeconds">00</span> <span>.</span>
+      <span id="spanMiliSeconds">00</span>
+    </div>
+
+    <div class="controls">
+      <button id="reset_button" class="reset" type="button">
+        <i class="fas fa-redo"></i>
+      </button>
+      <button id="pause_button" class="pause" type="button">
+        <i class="fas fa-pause"></i>
+      </button>
+      <button id="play_button" class="play" type="button">
+        <i class="fas fa-play"></i>
+      </button>
+    </div>
+  </div>
+
+  <footer>
+    <span>Feito por Otávio Pinheiro <i class="fas fa-heart"></i></span>
+
+    <div class="social_icons">
+      <a href="https://www.linkedin.com/in/otaviopiinheiro/" target="_blank">
+        <img src="./assets/images/linkedin.png" alt="linkedin-icon" /></a>
+
+      <a href="https://github.com/otaviopdev" target="_blank">
+        <img src="./assets/images/github.png" alt="github-icon" /></a>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="https://kit.fontawesome.com/35d40a1707.js" crossorigin="anonymous"></script>
+
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
